@@ -36,15 +36,5 @@ int main() {
 
     std::cout << "\n\n";
 
-
-        //for line in input:
-        //for i in range(int(line[1:])):
-        //    if line[0] == 'L':
-        //        position = (position + 100 - 1) % 100
-        //    else:
-        //        position = (position + 1) % 100
-        //    if position == 0:
-        //        passes += 1
-
     return 0;
 }
