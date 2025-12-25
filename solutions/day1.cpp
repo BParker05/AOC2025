@@ -5,10 +5,10 @@
 int main() {
     std::string line;
     int turn;
-    int passes;
+    int passes = 0;
     int position = 50;
 
-    std::ifstream file("../inputs/day1example.txt");
+    std::ifstream file("../inputs/day1.txt");
 
     while (getline (file, line)) {
         turn = std::stoi(line.substr(1));
@@ -22,19 +22,12 @@ int main() {
                 turn--;
             }
             if (position == 0){
-                std::cout<< line.substr(1) << std::endl;
                 passes++;
             }
         }
-        //std::cout << "Position " << position << std::endl;
-
     }
 
-    //std::cout << "Passes: " << passes;
-
-    //std::cout << "Position: " << position;
-
-    std::cout << "\n\n";
+    std::cout << "Passes: " << passes << std::endl;
 
     return 0;
 }
